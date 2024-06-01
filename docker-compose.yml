@@ -1,0 +1,11 @@
+version: "3"
+services:
+  docker-anaconda:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: docker-anaconda
+    ports:
+      - "1993:8888"
+    volumes:
+      - .:/app
