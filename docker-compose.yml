@@ -3,7 +3,7 @@ services:
   docker-anaconda:
     build:
       context: .
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     image: docker-anaconda
     ports:
       - "1993:8888"
